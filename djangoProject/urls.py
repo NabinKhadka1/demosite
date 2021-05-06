@@ -22,6 +22,7 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',TemplateView.as_view(template_name = 'backend/index.html')),
+    path('products/',include('apps.products.urls')),
 ]
 
 if settings.DEBUG:
