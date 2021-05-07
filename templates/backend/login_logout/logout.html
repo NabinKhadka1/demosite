@@ -1,0 +1,5 @@
+<form class="panel">
+    {% csrf_token %}
+    <h1>You're logged out of system</h1>
+    <a href="{% url 'login' %}">Log In Again</a>
+</form>
