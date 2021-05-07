@@ -35,6 +35,10 @@
                 {% include 'backend/partials/nav_bar/side_bar.html' %}
             </div>
 
+			{% block success %}
+
+			{% endblock %}
+
             <div class="main">
                 <!-- MAIN CONTENT -->
                 <div class="main-content">
@@ -169,7 +173,7 @@
 			var randomVal;
 			randomVal = getRandomInt(0, 100);
 
-			sysLoad.data('easyPieChart').update(randomVal);
+			// sysLoad.data('easyPieChart').update(randomVal);
 			sysLoad.find('.percent').text(randomVal);
 		}, updateInterval);
 
